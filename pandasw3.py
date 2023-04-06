@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-"""
+
 df = pd.read_csv('deneme.csv')
 
 #df.dropna(inplace= True)
@@ -54,6 +54,6 @@ df.plot()
 plt.show() # verileri çizdiriyoruz yani çizimini görüyoruz
 
 # histogram şeklinde veriyi gösterme kindi ile mümkün
-"""
+
 
 
