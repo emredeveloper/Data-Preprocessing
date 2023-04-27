@@ -12,14 +12,10 @@ maasDataFrame = pd.DataFrame(maasSozluk)
 print(maasDataFrame["Departman"].unique()) # bir kere yazdırmış oluyoruz  
 print(maasDataFrame["Departman"].nunique()) # sadece sayılar
 
-"""
-def bruttennete(maas):
 
-    return maas * 0.66
 
-print[maasDataFrame["Maas"].apply(bruttennete)]
 
-"""
+
 
 yeniBirVeri = {"Karakter Sınıfı" : ["South Park", "South Park", "Simpson", "Simpson","Simpson"],
               "Karakter Ismi" : ["Cartman", "Kenny", "Homer", "Bart","Bart"],
@@ -32,5 +28,17 @@ yenibirdataframe = pd.DataFrame(yeniBirVeri)
 # print(yenibirdataframe.pivot_table(values= "Karakter Yas ",index=["Karakter Sınıfı","Karakter Ismi"],aggfunc= np.sum))
 
 
-dataFrame = pd.read_excel("deneme.xlsx")
-print(dataFrame)
+# dataFrame = pd.read_excel("deneme.xlsx")
+# print(dataFrame)
+
+def bruttennete(maas):
+  """This function calculates the net salary from the gross salary."""
+  yuzdelik = maas * 0.66
+  return maas + yuzdelik
+
+yeni_maas = maasDataFrame["Maas"].apply(bruttennete)
+
+update_maas = bruttennete(maasDataFrame["Maas"].values)
+print(update_maas)
+
+
