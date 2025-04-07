@@ -39,6 +39,37 @@
             margin: 1rem 0;
             font-style: italic;
         }
+        .depth-switch {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: #f8f9fa;
+            display: inline-flex;
+            margin-bottom: 1rem;
+        }
+        .depth-switch-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .depth-switch-btn.active {
+            background-color: #4361ee;
+            color: white;
+        }
+        .paper-context {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .paper-context-title {
+            font-weight: 600;
+            color: #4361ee;
+        }
     </style>
 </head>
 <body>
@@ -111,20 +142,32 @@
                                 <label for="modelSelect" class="form-label">LLM Model</label>
                                 <select class="form-select" id="modelSelect">
                                     <option value="gemma3" selected>Gemma 3</option>
-                                    <option value="llama3">Llama 3</option>
-                                    <option value="mistral">Mistral</option>
+                                    <option value="deepseek-r1:1.5b">DeepSeek R1 (1.5B)</option>
+                                    <option value="qwen2.5:7b">Qwen 2.5 (7B)</option>
                                 </select>
                                 <div class="form-text">Select the LLM model to use for analysis.</div>
                             </div>
                             
                             <div class="mb-3">
                                 <label for="paperCount" class="form-label">Number of Papers</label>
-                                <input type="range" class="form-range" min="5" max="30" step="5" value="20" id="paperCount">
+                                <input type="range" class="form-range" min="1" max="5" step="1" value="3" id="paperCount">
                                 <div class="d-flex justify-content-between">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
                                     <span>5</span>
-                                    <span id="paperCountValue">20</span>
-                                    <span>30</span>
                                 </div>
+                                <div class="text-center" id="paperCountValue">3 papers</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Analysis Depth</label>
+                                <div class="depth-switch">
+                                    <div class="depth-switch-btn active" data-depth="title">Title Only</div>
+                                    <div class="depth-switch-btn" data-depth="rag">RAG (Full Content)</div>
+                                </div>
+                                <div class="form-text">RAG analyzes full paper content for deeper insights but takes longer.</div>
                             </div>
                             
                             <div class="form-check mb-3">
@@ -162,10 +205,25 @@
             const paperCountValue = document.getElementById('paperCountValue');
             const modelSelect = document.getElementById('modelSelect');
             const compareWithPrevious = document.getElementById('compareWithPrevious');
+            const depthSwitchBtns = document.querySelectorAll('.depth-switch-btn');
+            let analysisDepth = 'title'; // Default to title-only analysis
             
             // Update paper count display
             paperCount.addEventListener('input', function() {
-                paperCountValue.textContent = this.value;
+                const count = this.value;
+                paperCountValue.textContent = `${count} paper${count > 1 ? 's' : ''}`;
+            });
+            
+            // Set up depth switch buttons
+            depthSwitchBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    depthSwitchBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    // Update analysis depth
+                    analysisDepth = this.getAttribute('data-depth');
+                });
             });
             
             // Handle form submission
@@ -177,6 +235,15 @@
                 analysisContent.classList.add('d-none');
                 comparisonSection.classList.add('d-none');
                 analysisError.classList.add('d-none');
+                
+                // Update loading message for RAG
+                if (analysisDepth === 'rag') {
+                    analysisLoading.querySelector('p').textContent = 'Analyzing papers with RAG (Retrieval-Augmented Generation)...';
+                    analysisLoading.querySelector('p.small').textContent = 'This may take up to 60 seconds';
+                } else {
+                    analysisLoading.querySelector('p').textContent = 'Analyzing recent papers with LLM...';
+                    analysisLoading.querySelector('p.small').textContent = 'This may take up to 30 seconds';
+                }
                 
                 // Get papers from API
                 fetch('/api/papers')
@@ -194,7 +261,8 @@
                             body: JSON.stringify({
                                 papers: limitedPapers,
                                 model: modelSelect.value,
-                                compare: compareWithPrevious.checked
+                                compare: compareWithPrevious.checked,
+                                depth: analysisDepth
                             }),
                         });
                     })
@@ -213,6 +281,22 @@
                                 .replace(/2023/g, new Date().getFullYear());
                             
                             analysisContent.innerHTML = `<p>${formattedAnalysis}</p>`;
+                            
+                            // Add paper context section if using RAG
+                            if (analysisDepth === 'rag' && data.paper_contexts) {
+                                let contextHtml = '<div class="paper-context"><h5>Paper Contexts Used for Analysis</h5>';
+                                data.paper_contexts.forEach(context => {
+                                    contextHtml += `
+                                        <div class="mt-3">
+                                            <div class="paper-context-title">${context.title}</div>
+                                            <div>${context.excerpt}</div>
+                                        </div>
+                                    `;
+                                });
+                                contextHtml += '</div>';
+                                analysisContent.innerHTML += contextHtml;
+                            }
+                            
                             analysisContent.classList.remove('d-none');
                             
                             // Handle comparison data if available
