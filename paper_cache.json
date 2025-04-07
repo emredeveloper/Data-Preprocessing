@@ -1,0 +1,222 @@
+[
+  {
+    "id": "2504.03503",
+    "title": "Operator Learning: A Statistical Perspective",
+    "authors": "Unique Subedi, Ambuj Tewari",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03503.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03503"
+  },
+  {
+    "id": "2504.03461",
+    "title": "Conditioning Diffusions Using Malliavin Calculus",
+    "authors": "Jakiw Pidstrigach, Elizabeth Baker, Carles Domingo-Enrich, George Deligiannidis, Nikolas N\u00fcsken",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03461.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG); Probability (math.PR)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03461"
+  },
+  {
+    "id": "2504.03322",
+    "title": "Block Toeplitz Sparse Precision Matrix Estimation for Large-Scale Interval-Valued Time Series Forecasting",
+    "authors": "Wan Tian, Zhongfeng Qin",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03322.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03322"
+  },
+  {
+    "id": "2504.03318",
+    "title": "Adaptive Classification of Interval-Valued Time Series",
+    "authors": "Wan Tian, Zhongfeng Qin",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03318.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03318"
+  },
+  {
+    "id": "2504.03172",
+    "title": "Bayesian Optimization of Robustness Measures Using Randomized GP-UCB-based Algorithms under Input Uncertainty",
+    "authors": "Yu Inatsu",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03172.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03172"
+  },
+  {
+    "id": "2504.03158",
+    "title": "Accelerating Particle-based Energetic Variational Inference",
+    "authors": "Xuelian Bao, Lulu Kang, Chun Liu, Yiwei Wang",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03158.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03158"
+  },
+  {
+    "id": "2504.03097",
+    "title": "A computational transition for detecting multivariate shuffled linear regression by low-degree polynomials",
+    "authors": "Zhangsong Li",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03097.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG); Probability (math.PR); Statistics Theory (math.ST)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03097"
+  },
+  {
+    "id": "2504.03035",
+    "title": "High-dimensional ridge regression with random features for non-identically distributed data with a variance profile",
+    "authors": "Issa-Mbenard Dabo, J\u00e9r\u00e9mie Bigot",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03035.pdf",
+    "category": "Machine Learning (stat.ML); Machine Learning (cs.LG); Probability (math.PR); Statistics Theory (math.ST); Methodology (stat.ME)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03035"
+  },
+  {
+    "id": "2504.02919",
+    "title": "ConfEviSurrogate: A Conformalized Evidential Surrogate Model for Uncertainty Quantification",
+    "authors": "Yuhan Duan, Xin Zhao, Neng Shi, Han-Wei Shen",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.02919.pdf",
+    "category": "Machine Learning (stat.ML); Graphics (cs.GR); Machine Learning (cs.LG)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.02919"
+  },
+  {
+    "id": "2504.03560",
+    "title": "Stochastic Optimization with Optimal Importance Sampling",
+    "authors": "Liviu Aolaritei, Bart P.G. Van Parys, Henry Lam, Michael I. Jordan",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03560.pdf",
+    "category": "Optimization and Control (math.OC); Machine Learning (cs.LG); Statistics Theory (math.ST); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03560"
+  },
+  {
+    "id": "2504.03321",
+    "title": "Adaptive sparse variational approximations for Gaussian process regression",
+    "authors": "Dennis Nieman, Botond Szab\u00f3",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03321.pdf",
+    "category": "Statistics Theory (math.ST); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03321"
+  },
+  {
+    "id": "2504.03228",
+    "title": "Weak instrumental variables due to nonlinearities in panel data: A Super Learner Control Function estimator",
+    "authors": "Monika Avila Marquez",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03228.pdf",
+    "category": "Econometrics (econ.EM); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03228"
+  },
+  {
+    "id": "2504.03190",
+    "title": "The Ground Cost for Optimal Transport of Angular Velocity",
+    "authors": "Karthik Elamvazhuthi, Abhishek Halder",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03190.pdf",
+    "category": "Optimization and Control (math.OC); Machine Learning (cs.LG); Systems and Control (eess.SY); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03190"
+  },
+  {
+    "id": "2504.03152",
+    "title": "Safe Screening Rules for Group OWL Models",
+    "authors": "Runxue Bao, Quanchao Lu, Yanfu Zhang",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03152.pdf",
+    "category": "Machine Learning (cs.LG); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03152"
+  },
+  {
+    "id": "2504.03122",
+    "title": "From Observation to Orientation: an Adaptive Integer Programming Approach to Intervention Design",
+    "authors": "Abdelmonem Elrefaey, Rong Pan",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03122.pdf",
+    "category": "Machine Learning (cs.LG); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03122"
+  },
+  {
+    "id": "2504.03119",
+    "title": "Graph Network Modeling Techniques for Visualizing Human Mobility Patterns",
+    "authors": "Sinjini Mitra, Anuj Srivastava, Avipsa Roy, Pavan Turaga",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.03119.pdf",
+    "category": "Social and Information Networks (cs.SI); Artificial Intelligence (cs.AI); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.03119"
+  },
+  {
+    "id": "2504.02938",
+    "title": "Graph Attention for Heterogeneous Graphs with Positional Encoding",
+    "authors": "Nikhil Shivakumar Nayak",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.02938.pdf",
+    "category": "Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Discrete Mathematics (cs.DM); Differential Geometry (math.DG); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.02938"
+  },
+  {
+    "id": "2504.02900",
+    "title": "Comparative Analysis of Deepfake Detection Models: New Approaches and Perspectives",
+    "authors": "Matheus Martins Batista",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.02900.pdf",
+    "category": "Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Computation (stat.CO); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.02900"
+  },
+  {
+    "id": "2504.00059",
+    "title": "ModelRadar: Aspect-based Forecast Evaluation",
+    "authors": "Vitor Cerqueira, Luis Roque, Carlos Soares",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.00059.pdf",
+    "category": "Machine Learning (cs.LG); Machine Learning (stat.ML)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.00059"
+  },
+  {
+    "id": "2504.02518",
+    "title": "Online Multivariate Regularized Distributional Regression for High-dimensional Probabilistic Electricity Price Forecasting",
+    "authors": "Simon Hirsch",
+    "abstract": "No abstract found",
+    "description": "No description available",
+    "pdf_link": "https://arxiv.org/pdf/2504.02518.pdf",
+    "category": "Machine Learning (stat.ML); Econometrics (econ.EM); Statistical Finance (q-fin.ST); Applications (stat.AP); Computation (stat.CO)",
+    "pub_date": "07 Apr 2025",
+    "arxiv_link": "https://arxiv.org/abs/2504.02518"
+  }
+]

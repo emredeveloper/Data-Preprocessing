@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arXiv Paper Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="bi bi-journal-text me-2"></i>arXiv ML Paper Analysis
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/papers">Papers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/analysis">Analysis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body text-center p-5">
+                        <h1 class="display-4 mb-3">arXiv ML Paper Analysis</h1>
+                        <p class="lead">
+                            Discover trends and insights from the latest Machine Learning research papers
+                            on arXiv's stat.ML category using AI-powered analysis.
+                        </p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+                            <a href="/papers" class="btn btn-primary btn-lg px-4 gap-3">
+                                <i class="bi bi-journal-richtext me-2"></i>Browse Papers
+                            </a>
+                            <a href="/analysis" class="btn btn-outline-secondary btn-lg px-4">
+                                <i class="bi bi-graph-up me-2"></i>View Analysis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-search me-2"></i>Discover Research</h5>
+                                <p class="card-text">Browse the most recent papers from arXiv's stat.ML category, 
+                                    with easy access to abstracts, authors, and PDF links.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-bar-chart me-2"></i>Analyze Trends</h5>
+                                <p class="card-text">Get AI-powered analysis of research trends, emerging topics, 
+                                    and thematic patterns in recent publications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-lightning me-2"></i>Stay Updated</h5>
+                                <p class="card-text">Always get the latest research papers with our 
+                                    regularly refreshed database directly from arXiv.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-share me-2"></i>Share Findings</h5>
+                                <p class="card-text">Easily share papers and analysis results with 
+                                    colleagues or save to your local machine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 my-4">
+        <p class="text-center text-muted">© {{ current_year }} arXiv Paper Analysis</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
